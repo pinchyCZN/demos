@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DOS demos, in a browser</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div id="wrap">
+
+  <h1>DOS DEMOS, IN A BROWSER</h1>
+  <p class="lede">
+    Mid-1990s DOS 64k intros, reverse engineered and rebuilt in C, then
+    compiled to WebAssembly. Each one depacks the original executable in
+    memory and runs from it. Click a picture to run it - picture and
+    sound start together, because a browser will not play audio until
+    you ask it to.
+  </p>
+
+  <div class="demo">
+    <a href="stickmans-world/"><img src="assets/stickmans-world.png"
+       alt="StickMan's World - a line-drawn figure dancing"></a>
+    <div>
+      <h2><a href="stickmans-world/">StickMan's World</a></h2>
+      <p class="by">Coma &middot; Assembly 1995 &middot; UKKO.EXE, 52,836 bytes</p>
+      <p>
+        A rotoscoped stick figure dances through four wireframe rooms,
+        drawn entirely in lines - 705 captured poses, tweened.
+      </p>
+    </div>
+  </div>
+
+  <div class="demo">
+    <a href="excursion/"><img src="assets/excursion.png"
+       alt="EXCURSION - the title over a voxel landscape, with a ship"></a>
+    <div>
+      <h2><a href="excursion/">EXCURSION</a></h2>
+      <p class="by">Vista &middot; Abduction 1996 &middot; XCURSION.EXE, 49,761 bytes</p>
+      <p>
+        A voxel landscape, a rotozoomer, a tunnel and a planet, flown
+        past in one continuous shot.
+      </p>
+    </div>
+  </div>
+
+  <div class="demo">
+    <a href="lithium/"><img src="assets/lithium.png"
+       alt="LITHIUM - ships and lens flares over a terrain at night"></a>
+    <div>
+      <h2><a href="lithium/">LITHIUM</a></h2>
+      <p class="by">Vista &middot; Juhla 1997 &middot; LITHIUM.EXE, 63,281 bytes</p>
+      <p>
+        Ships duel over a terrain, a tower shatters and reassembles,
+        and a tunnel turns - every cut landing on the music.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p class="note">
+      Each picture above is a frame the reconstruction actually renders,
+      at the 320x200 these demos ran in.
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

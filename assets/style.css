@@ -1,0 +1,67 @@
+/* Shared by the landing page. The demo pages carry their own CSS,
+   inlined by emcc from tools/web_shell.html in the source repo. */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #999;
+    font: 13px/1.6 "Courier New", monospace;
+}
+
+a { color: #6cf; text-decoration: none; }
+a:hover { color: #9df; }
+
+#wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 16px 56px;
+}
+
+h1 {
+    font-size: 17px;
+    color: #ccc;
+    letter-spacing: 2px;
+    margin: 0 0 6px;
+}
+
+.lede { margin: 0 0 32px; max-width: 70ch; }
+
+/* One card per demo. The thumbnail is 320x200 - mode 13h's own
+   resolution - so it is left unscaled and pixelated rather than
+   smoothed up to some other size. */
+.demo {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    padding: 16px 0;
+    border-top: 1px solid #222;
+}
+
+.demo img {
+    width: 320px;
+    height: 200px;
+    background: #000;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    display: block;
+    flex: none;
+}
+
+.demo h2 { font-size: 15px; color: #ccc; margin: 0 0 4px; letter-spacing: 1px; }
+.demo .by { color: #777; margin: 0 0 10px; }
+.demo p  { margin: 0 0 10px; max-width: 54ch; }
+
+.note { color: #777; }
+
+footer {
+    margin-top: 40px;
+    border-top: 1px solid #222;
+    padding-top: 16px;
+    color: #777;
+}
+
+@media (max-width: 700px) {
+    .demo { flex-direction: column; }
+    .demo img { width: 100%; height: auto; }
+}
