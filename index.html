@@ -3,19 +3,43 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DOS demos, in a browser</title>
+<title>Demos, in a browser</title>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <div id="wrap">
 
-  <h1>DOS DEMOS, IN A BROWSER</h1>
+  <h1>DEMOS, IN A BROWSER</h1>
   <p class="lede">
-    Mid-1990s DOS 64k intros, reverse engineered and rebuilt in C, then
-    compiled to WebAssembly. Each one depacks the original executable in
-    memory and runs from it. Click a picture to run it - picture and
-    sound start together, because a browser will not play audio until
-    you ask it to.
+    Demos of the 1990s, reverse engineered and rebuilt in C, then
+    compiled to WebAssembly. Each one reads the original release at
+    run time and draws from it. Click a picture to run it - picture
+    and sound start together, because a browser will not play audio
+    until you ask it to.
+  </p>
+
+  <h2 class="sect">AMIGA</h2>
+
+  <div class="demo">
+    <a href="relic/"><img src="assets/relic.png"
+       alt="RELIC - a vessel lit in cyan over a planet"></a>
+    <div>
+      <h2><a href="relic/">RELIC</a></h2>
+      <p class="by">Nerve Axis &middot; Assembly 1998 &middot;
+        winner, Amiga demo competition</p>
+      <p>
+        An AGA demo for a 68020: a terminal, a vessel approached and
+        boarded, an orb formed and released, a temple cast as voxels,
+        a city burned and a planet destroyed. 33,495 lines of
+        hand-written assembly, by its authors' own count.
+      </p>
+    </div>
+  </div>
+
+  <h2 class="sect">DOS 64K</h2>
+  <p class="lede">
+    Mid-1990s DOS 64k intros. Each one depacks the original executable
+    in memory and runs from it.
   </p>
 
   <div class="demo">
@@ -59,8 +83,9 @@
 
   <footer>
     <p class="note">
-      Each picture above is a frame the reconstruction actually renders,
-      at the 320x200 these demos ran in.
+      Each picture above is a frame the reconstruction actually
+      renders, at the resolution the demo ran in - 320x200 for the
+      DOS intros, 160x100 for RELIC, shown at twice that.
     </p>
   </footer>
 

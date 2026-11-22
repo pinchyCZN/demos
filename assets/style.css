@@ -52,6 +52,20 @@ h1 {
 .demo .by { color: #777; margin: 0 0 10px; }
 .demo p  { margin: 0 0 10px; max-width: 54ch; }
 
+/* One per platform. The rule above it is the divider, so the first
+   card of a section never draws its own. */
+h2.sect {
+    font-size: 15px;
+    color: #ccc;
+    letter-spacing: 2px;
+    margin: 40px 0 10px;
+    padding-top: 20px;
+    border-top: 2px solid #333;
+}
+
+h2.sect + .demo,
+h2.sect + .lede + .demo { border-top: 0; }
+
 .note { color: #777; }
 
 footer {
