@@ -3,19 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Demos, in a browser</title>
+<title>Amiga and PC demos, in a browser</title>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <div id="wrap">
 
-  <h1>DEMOS, IN A BROWSER</h1>
+  <h1>AMIGA AND PC DEMOS, IN A BROWSER</h1>
   <p class="lede">
-    Demos of the 1990s, reverse engineered and rebuilt in C, then
-    compiled to WebAssembly. Each one reads the original release at
-    run time and draws from it. Click a picture to run it - picture
-    and sound start together, because a browser will not play audio
-    until you ask it to.
+    Amiga and PC demos of the 1990s and 2000s, reverse engineered and
+    rebuilt in C and C++, then compiled to WebAssembly. Each one reads
+    the original release at run time and draws from it.
   </p>
 
   <h2 class="sect">AMIGA</h2>
@@ -81,13 +79,22 @@
     </div>
   </div>
 
-  <footer>
-    <p class="note">
-      Each picture above is a frame the reconstruction actually
-      renders, at the resolution the demo ran in - 320x200 for the
-      DOS intros, 160x100 for RELIC, shown at twice that.
-    </p>
-  </footer>
+  <h2 class="sect">PC DEMOS</h2>
+
+  <div class="demo">
+    <a href="rupture/"><img src="assets/rupture.png"
+       alt="RUPTURE - a helicopter bursting into glowing shards over a wireframe city"></a>
+    <div>
+      <h2><a href="rupture/">RUPTURE</a></h2>
+      <p class="by">Andromeda Software Development &middot; The Gathering 2009</p>
+      <p>
+        A motorcycle down a night road, a truck through a tunnel, a
+        train, a boat over a sea of hexagons and a city where a
+        helicopter falls apart - all in glowing edges. Its Cg shaders
+        are transcribed to GLSL and run on WebGL2.
+      </p>
+    </div>
+  </div>
 
 </div>
 </body>
